@@ -1,12 +1,12 @@
 /* PALETA*/
 :root {
-  --primary: #2563EB;
+  --primary: #2563eb;
   /* Azul eléctrico */
-  --primary-soft: #DCEEFF;
+  --primary-soft: #dceeff;
   /* Azul hielo */
-  --bg-main: #FFFFFF;
+  --bg-main: #ffffff;
   /* Fondo */
-  --text-main: #1F2937;
+  --text-main: #1f2937;
   /* Gris grafito */
   --accent: #67d4b0;
   /* Verde menta */
@@ -16,7 +16,8 @@
 .promocion {
   background: var(--accent);
   color: var(--bg-main);
-  font-family: "Montserrat Alternates", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: "Montserrat Alternates", system-ui, -apple-system, Segoe UI,
+    Roboto, Arial, sans-serif;
   font-weight: 600;
   font-size: 1rem;
   line-height: 34px;
@@ -51,7 +52,7 @@
 
 /* LOGO*/
 .logo img {
-  width: 200px;
+  width: 60px;
   height: auto;
 }
 
@@ -167,9 +168,7 @@
   color: var(--primary);
   text-decoration: none;
 
-  transition: transform 0.15s ease,
-    background-color 0.2s ease,
-    color 0.2s ease,
+  transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease,
     border-color 0.2s ease;
 }
 
