@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Header | SportZone</title>
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="./css/header.css">
+  <!-- Bootstrap solo para colapsar el menú (JS) y estilos base -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Iconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./images/IconoSportZone.png">
+</head>
+
+<body>
+  <!-- role="banner": bloque superior de la página -->
+  <header class="header header-fijo fixed-top" role="banner" aria-label="Encabezado del sitio">
+    <!-- Franja de promoción -->
+    <p class="promocion m-0 text-center">
+      ¡Envíos gratis a todo México en compras mayores a $1500.00 MXN!
+    </p>
+
+    <!-- ========= DESKTOP / TABLET GRANDE ========= -->
+    <div class="col-12 header-wrap header-desktop">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html" class="inicio" aria-label="Ir al inicio">
+            <img src="./images/LogoSportZone.png" alt="SportZone">
+          </a>
+        </div>
+
+        <!-- Buscador -->
+        <div class="buscador d-none d-md-block">
+          <form class="buscador" role="search" aria-label="Buscador del sitio">
+            <input type="search" name="q" placeholder="Buscar en SportZone" aria-label="Término de búsqueda">
+            <button type="submit" aria-label="Buscar">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Menú principal -->
+        <div class="header-actions">
+          <nav class="menu" role="navigation" aria-label="Menú principal">
+            <ul>
+              <li class="dropdown">
+                <a href="index.html">INICIO</a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html#quienessomos">¿Quiénes somos?</a></li>
+                  <li><a href="index.html#productosdestacado">Productos destacados</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="./productos.html">CATÁLOGO</a>
+                <ul class="dropdown-menu">
+                  <li><a href="productos.html#Tennis">Tennis</a></li>
+                  <li><a href="productos.html#Paddel">Pádel</a></li>
+                  <li><a href="productos.html#Regata">Regata</a></li>
+                  <li><a href="productos.html#Polo">Polo</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./contacto.html">CONTÁCTANOS</a></li>
+              <li><a href="./reseñas.html">RESEÑAS</a></li>
+
+              <li>
+                <a href="./carrito.html" aria-label="Ver carrito de compras">
+                  <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-redes">
+            <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Línea divisoria debajo del header -->
+  <div class="header-topline"></div>
+
+
+  <!-- scripts -->
+  <script type="module" src="/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
