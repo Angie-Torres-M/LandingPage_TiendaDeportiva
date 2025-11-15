@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   // 2) Inserta FOOTER
   await includeHTML("#site-footer", "./footer.html");
 
+  await includeHTML("#site-carrucel", "./carrucel.html");
+
   // 3) Ajusta margen del main (ya existe el header)
   adjustMainOffset();
 

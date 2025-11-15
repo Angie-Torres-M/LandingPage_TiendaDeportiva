@@ -1,0 +1,227 @@
+.carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.img {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+  height: 576px;
+  width: 1134px;
+  border-radius: 15px;
+  margin: 5px;
+  object-fit: cover;
+  filter: saturate(175%);
+}
+
+.texto {
+  overflow: hidden;
+  position: absolute;
+  flex-direction: column;
+  transform: translateY(0px);
+  margin-bottom: 9px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(63, 106, 138, 0.21);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.texto h3 {
+  text-shadow: 0px 0px 15px black;
+  padding-top: 40px;
+  color: white;
+  font-weight: 300;
+  font-size: 27px;
+}
+
+.texto p {
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-size: 0px;
+  font-weight: 300;
+}
+
+.imagenes .texto {
+  width: 600px;
+  height: 100px;
+  transition: 1s;
+}
+
+.imagenes:hover .texto {
+  transition: height 1s, transform 1s, background-color 1s;
+  transform: translateY(-150px);
+  height: 300px;
+  background-color: rgba(63, 106, 138, 0.71);
+}
+
+.imagenes:hover .texto p {
+  transition: font-size 0s 0.2s linear;
+  font-size: 23px;
+  font-weight: 300;
+
+  text-shadow: 0px 0px 10px #000000;
+}
+
+.puntos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.puntos p {
+  font-size: 100px;
+  font-weight: 500;
+  margin-top: -50px;
+  color: black;
+}
+
+.puntos .bold {
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #5e17eb;
+}
+
+.icon {
+  width: 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 50%;
+    transform: scale(0.9);
+  }
+}
+
+/* ======================================= */
+/* 📌 1024px (laptops pequeñas / tablets)  */
+/* ======================================= */
+@media (max-width: 1235px) {
+  .img {
+    width: 99%;
+    height: auto;
+    max-height: 480px;
+  }
+
+  .imagenes .texto {
+    height: 90px;
+  }
+
+  .texto h3 {
+    font-size: 24px;
+    padding-top: 25px;
+  }
+
+  .imagenes:hover .texto {
+    transform: translateY(-110px);
+    height: 250px;
+  }
+
+  .imagenes:hover .texto p {
+    font-size: 20px;
+  }
+
+  .icon {
+    width: 35px;
+  }
+}
+
+/* ======================================= */
+/* 📌 768px (tablets)                      */
+/* ======================================= */
+@media (max-width: 768px) {
+  .img {
+    width: 98.5%;
+    height: auto;
+    max-height: 360px;
+  }
+
+  .imagenes .texto {
+    width: 70%;
+    height: 80px;
+  }
+
+  .texto h3 {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  .imagenes:hover .texto {
+    transform: translateY(-80px);
+    height: 220px;
+  }
+
+  .imagenes:hover .texto p {
+    font-size: 18px;
+  }
+
+  .icon {
+    width: 32px;
+  }
+}
+
+/* ======================================= */
+/* 📌 480px (celulares grandes)            */
+/* ======================================= */
+@media (max-width: 480px) {
+  .img {
+    width: 98.5%;
+    height: auto;
+    max-height: 280px;
+    border-radius: 12px;
+  }
+
+  .imagenes .texto {
+    width: 70%;
+    height: 70px;
+    border-radius: 20px;
+    padding-top: 15px;
+  }
+
+  .texto h3 {
+    font-size: 14px;
+  }
+
+  .imagenes:hover .texto {
+    transform: translateY(-50px);
+    height: 180px;
+  }
+
+  .imagenes:hover .texto p {
+    font-size: 15px;
+  }
+
+  .icon {
+    width: 26px;
+  }
+}
+
+/* ======================================= */
+/* 📌 360px (celulares pequeños)           */
+/* ======================================= */
+@media (max-width: 360px) {
+  .img {
+    width: 97%;
+    max-height: 240px;
+  }
+
+  .texto h3 {
+    font-size: 12px;
+  }
+
+  .imagenes:hover .texto p {
+    font-size: 14px;
+  }
+}
