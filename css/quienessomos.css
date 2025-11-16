@@ -1,0 +1,68 @@
+/* SECCIÓN: QUIÉNES SOMOS*/
+
+
+#quienes-somos {
+  padding: 4rem 0;
+  background-color: var(--bg-soft); /* fondo suave para separar la sección */
+}
+
+/* Intro */
+.qs-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+}
+
+.qs-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.qs-text {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  color: var(--text-main);
+  margin-bottom: 0; /* controlado por espaciados de Bootstrap */
+}
+
+.qs-text2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000000 ;
+  margin-bottom: 0.75rem;
+}
+
+/* Misión y Visión */
+.qs-mision-vision {
+  background-color: var(--bg-main);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+}
+
+
+.qs-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+/* Opcional: resaltar ligeramente la segunda columna */
+.qs-mision-vision .col-md-6:last-child {
+  border-left: 1px solid var(--primary-soft);
+  padding-left: 1.5rem;
+}
+
+/* Quitar borde entre Misión y Visión en pantallas pequeñas */
+@media (max-width: 768px) {
+  .qs-mision-vision .col-md-6:last-child {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 1.5rem; /* separa visualmente las secciones */
+    border-top: 1px solid var(--primary-soft); /* línea suave arriba */
+    padding-top: 1rem;
+  }
+}
+

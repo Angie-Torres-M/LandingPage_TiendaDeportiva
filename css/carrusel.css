@@ -1,0 +1,148 @@
+/* ===== Contenedor general del carrusel ===== */
+
+.carrusel {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+/* Centrar el carrusel en desktop */
+#iniciocompubi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tamaño base de las imágenes (pantallas grandes) */
+#carouselExampleControls1 .carousel-item img {
+  max-width: 100%;
+  height: 360px;          /* más pequeño que los 576px originales */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ===== Controles (flechas) ===== */
+
+#carouselExampleControls1 .carousel-control-prev svg,
+#carouselExampleControls1 .carousel-control-next svg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover de las flechas */
+#carouselExampleControls1 .carousel-control-prev:hover svg,
+#carouselExampleControls1 .carousel-control-next:hover svg {
+  color: #ffffff;
+  background-color: #2563eb;   /* tu azul primario */
+  transform: scale(1.15);
+}
+
+/* Área “clicable” de los botones anterior/siguiente */
+#carouselExampleControls1 .carousel-control-prev,
+#carouselExampleControls1 .carousel-control-next {
+  width: 4%;
+  background-color: transparent;
+}
+
+/* Ajustar posición horizontal de las flechas */
+#carouselExampleControls1 .carousel-control-prev {
+  left: 0.5rem;
+}
+
+#carouselExampleControls1 .carousel-control-next {
+  right: 0.5rem;
+}
+
+/* Redondeo general de las imágenes del carrusel */
+#carouselExampleControls1 .carousel-inner img {
+  border-radius: 12px;
+  margin: 0;
+}
+
+/* ===== Indicadores personalizados (estrellitas) ===== */
+
+.carousel-indicator {
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.carousel-indicator .indicator img {
+  width: 20px;
+  height: 20px;
+  margin: 0 3px;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.carousel-indicator .indicator img:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+#carouselExampleControls1 .carousel-item img {
+    margin: 0 auto;        /* centra horizontal */
+    display: block;        /* obliga al centrado */
+    max-width: 85%;        /* ajusta tamaño para que no choque con flechas */
+}
+
+#carouselExampleControls1 .carousel-inner {
+    display: flex;
+    align-items: center;
+}
+
+
+#carouselExampleControls1 .carousel-control-prev,
+#carouselExampleControls1 .carousel-control-next {
+    width: 5%;     /* flechas más pegadas a los lados */
+}
+
+
+/* ========================= */
+/*    RESPONSIVE BREAKPOINTS */
+/* ========================= */
+
+/* Laptops / tablets grandes */
+@media (max-width: 992px) {
+  #carouselExampleControls1 .carousel-item img {
+    height: 300px;
+  }
+
+  #carouselExampleControls1 .carousel-control-prev,
+  #carouselExampleControls1 .carousel-control-next {
+    width: 6%;
+  }
+}
+
+/* Tablets verticales */
+@media (max-width: 768px) {
+  /* Si quieres mostrarlo también en tablet, quita d-none d-md-block en el HTML */
+  #iniciocompubi {
+    display: block;
+  }
+
+  #carouselExampleControls1 .carousel-item img {
+    height: 260px;
+    border-radius: 10px;
+  }
+}
+
+/* Celulares grandes */
+@media (max-width: 576px) {
+  #carouselExampleControls1 .carousel-item img {
+    height: 220px;
+    border-radius: 8px;
+  }
+
+  #carouselExampleControls1 .carousel-control-prev,
+  #carouselExampleControls1 .carousel-control-next {
+    width: 10%;
+  }
+}
+
+/* Celulares muy pequeños */
+@media (max-width: 360px) {
+  #carouselExampleControls1 .carousel-item img {
+    height: 200px;
+  }
+}

@@ -1,15 +1,10 @@
 /* PALETA*/
 :root {
-  --primary: #2563eb;
-  /* Azul eléctrico */
-  --primary-soft: #dceeff;
-  /* Azul hielo */
-  --bg-main: #ffffff;
-  /* Fondo */
-  --text-main: #1f2937;
-  /* Gris grafito */
-  --accent: #67d4b0;
-  /* Verde menta */
+  --primary: #2563eb;      /* Azul eléctrico */
+  --primary-soft: #dceeff; /* Azul hielo */
+  --bg-main: #ffffff;      /* Fondo */
+  --text-main: #1f2937;    /* Gris grafito */
+  --accent: #67d4b0;       /* Verde menta */
 }
 
 /* FRANJA DE PROMOCIÓN */
@@ -25,7 +20,7 @@
   margin: 0;
 }
 
-/*HEADER PRINCIPAL (solo desktop) */
+/* HEADER PRINCIPAL (solo desktop base) */
 .header {
   background-color: var(--bg-main);
 }
@@ -45,12 +40,11 @@
   align-items: center;
   column-gap: 2rem;
   padding: 0.8rem 2rem;
-
   max-width: 1300px;
   margin: 0 auto;
 }
 
-/* LOGO*/
+/* LOGO */
 .logo img {
   width: 60px;
   height: auto;
@@ -141,11 +135,10 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 3rem;
-  /* espacio entre menú y redes */
+  gap: 3rem; /* espacio entre menú y redes */
 }
 
-/*  REDES SOCIALES*/
+/*  REDES SOCIALES */
 .header-redes {
   display: flex;
   gap: 0.8rem;
@@ -160,15 +153,15 @@
   align-items: center;
   width: 32px;
   height: 32px;
-
   background: #fff;
   border: 1px solid var(--primary-soft);
   border-radius: 50%;
-
   color: var(--primary);
   text-decoration: none;
-
-  transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease,
+  transition:
+    transform 0.15s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
     border-color 0.2s ease;
 }
 
@@ -185,12 +178,108 @@
   font-size: 0.95rem;
 }
 
-/* ============================================
-   LÍNEA DIVISORIA BAJO EL HEADER
-============================================ */
+/* LÍNEA DIVISORIA BAJO EL HEADER */
 .header-topline {
   height: 2px;
   background-color: var(--primary);
   width: 100%;
   margin: 0;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+/* Tablets / laptops pequeñas */
+@media (max-width: 992px) {
+  .header-container {
+    grid-template-columns: 1fr;   /* una sola columna */
+    row-gap: 0.75rem;
+    text-align: center;
+    padding: 0.75rem 1.25rem;
+  }
+
+  /* Logo centrado */
+  .logo {
+    justify-self: center;
+  }
+
+  /* Buscador más compacto */
+  .buscador {
+    justify-self: center;
+    width: 100%;
+  }
+
+  .buscador input {
+    font-size: 0.9rem;
+    padding: 0.55rem 0.85rem;
+  }
+
+  .buscador button {
+    padding: 0.55rem 0.85rem;
+  }
+
+  /* Menú + redes en columna centrada */
+  .header-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .menu ul {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  .promocion {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding: 0.3rem 0.5rem;
+    white-space: nowrap;
+  }
+
+  .header-container {
+    padding: 0.5rem 0.75rem;
+    row-gap: 0.5rem;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .buscador {
+    width: 100%;
+  }
+
+  .buscador input {
+    font-size: 0.85rem;
+    padding: 0.45rem 0.7rem;
+  }
+
+  .buscador button {
+    padding: 0.45rem 0.7rem;
+  }
+
+  .menu ul {
+    gap: 0.8rem;
+  }
+
+  .menu a {
+    font-size: 0.85rem;
+  }
+
+  .header-redes a {
+    width: 28px;
+    height: 28px;
+  }
+
+  .header .fa-brands,
+  .header .fa-solid {
+    font-size: 0.85rem;
+  }
 }
