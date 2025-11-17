@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportZone</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SportZone</title>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,800;1,14..32,800&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,800;1,14..32,800&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-    rel="stylesheet" />
+    <!-- Bootstrap / FontAwesome -->
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- CSS global -->
-  <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="./images/IconoSportZone.png" />
+  </head>
 
+  <body>
+    <!-- Aquí se inserta el <header> (fragmento header.html) -->
+    <div id="site-header"></div>
 
-  <!-- Bootstrap / FontAwesome -->
+    <!-- ÚNICO main del sitio -->
+    <main
+      class="main"
+      id="contenido-principal"
+      aria-labelledby="titulo-productos-destacados"
+      class="container mt-5"
+    >
+      <!-- Aquí se inserta Quienes somos -->
+      <div id="site-carruselMasQS"></div>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+      <!-- Aquí se inserta Productos y promociones -->
 
-  <link rel="icon" type="image/png" href="./images/IconoSportZone.png" />
-</head>
+      <div id="site-productos_y_promociones"></div>
+    </main>
+    <!-- Aquí se inserta el <footer> (fragmento footer.html) -->
+    <div id="site-footer"></div>
 
-<body>
-  <!-- Aquí se inserta el <header> (fragmento header.html) -->
-  <div id="site-header"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS bundle (incluye Popper y Carousel) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- ÚNICO main del sitio -->
-  <main class="main" id="contenido-principal" aria-labelledby="titulo-productos-destacados"  class="container mt-5">
+    <!-- Tus scripts, después -->
+    <script src="./js/carrusel.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/productos_y_promociones.js"></script>
 
-
-    <!-- Aquí se inserta Quienes somos -->
-    <div id="site-carruselMasQS"></div>
-
-       <!-- Aquí se inserta Productos y promociones -->
-
-    <div id="site-productos_y_promociones"></div>
-
-
-  </main>
-  <!-- Aquí se inserta el <footer> (fragmento footer.html) -->
-  <div id="site-footer"></div>
-
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Bootstrap JS bundle (incluye Popper y Carousel) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-  <!-- Tus scripts, después -->
-  <script src="./js/carrusel.js"></script>
-  <script src="./js/main.js"></script>
-  <script src="./js/productos_y_promociones.js"></script>
-
-</body>
-
+    <link rel="stylesheet" href="./css/style.css" />
+  </body>
 </html>
