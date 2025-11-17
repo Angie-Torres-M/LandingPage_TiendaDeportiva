@@ -19,7 +19,7 @@ function setupCarousel(carouselId, indicatorContainerId) {
 
   // Inicializar el carrusel de Bootstrap (auto-slide + flechas)
   const bsCarousel = new bootstrap.Carousel(carouselEl, {
-    interval: 4000,   // 4 segundos por slide
+    interval: 2000,   // 2 segundos por slide
     ride: "carousel", // inicia solo
     pause: "hover",   // se pausa al poner mouse encima
     wrap: true        // vuelve al inicio al llegar al final
