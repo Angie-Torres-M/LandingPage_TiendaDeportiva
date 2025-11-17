@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   await includeHTML("#site-carruselMasQS", "./carruselMasQS.html");
 
+  await includeHTML("#site-productos_y_promociones", "./productos_y_promociones.html");
+  
   // 3) Ajusta margen del main (ya existe el header)
   adjustMainOffset();
 
