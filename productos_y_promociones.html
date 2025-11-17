@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>SportZone – Productos y Promociones</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"/>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./css/productos_y_promociones.css" />
+</head>
+<body>
+
+  <main class="py-5">
+
+    <!-- ==========================
+     SECCIÓN: PRODUCTOS DESTACADOS
+    =========================== -->
+    <section id="productos" class="seccion-productos py-5">
+      <div class="container">
+
+        <!-- Título con caballito -->
+        <div class="text-center mb-2">
+          <!-- Logo pequeño arriba -->
+          <img src="./images/IconoSportZone.png" alt="Logo SportZone" class="logo-caballo-titulo mb-1"/>
+          <h2 class="titulo-seccion-productos">
+            Productos destacados
+          </h2>
+          <p class="texto-seccion-productos">
+            Selección curada de equipamiento técnico para polo, pádel, tenis y regata,
+            diseñada para quienes buscan rendimiento y estilo en cada jugada.
+          </p>
+        </div>
+
+        <!-- Grid de tarjetas -->
+        <div class="row g-4">
+          <!-- Tarjeta 1: Polo -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="tarjeta-producto h-100 position-relative">
+              <div class="encabezado-tarjeta"></div>
+
+              <span class="insignia-esquina">Nuevo</span>
+
+              <div class="contenedor-imagen-producto">
+                <img src="./images/botas_de_polo.webp" alt="Botas de polo" class="img-fluid"/>
+              </div>
+
+              <div class="card-body cuerpo-tarjeta">
+                <h5 class="titulo-producto mb-1">
+                  Botas Polo Elite Leather
+                </h5>
+                <p class="texto-producto mb-3">
+                  Bota de cuero premium, caña alta y acabado pulido para un control impecable en cada chukker.
+                </p>
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="bloque-precio">
+                    <span class="precio-principal">$4,299 MXN</span>
+                    <span class="precio-anterior">$4,899</span>
+                  </div>
+                  <span class="chip-etiqueta">
+                    🐎 Polo
+                  </span>
+                </div>
+
+                <button class="btn boton-carrito w-100 boton-agregar-carrito">
+                  🛒 Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2: Pádel -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="tarjeta-producto h-100 position-relative">
+              <div class="encabezado-tarjeta"></div>
+
+              <span class="insignia-esquina insignia-descuento">
+                -25%
+              </span>
+
+              <div class="contenedor-imagen-producto">
+                <img src="./images/pala_de_padel.png" alt="Pala de pádel" class="img-fluid" />
+              </div>
+
+              <div class="card-body cuerpo-tarjeta">
+                <h5 class="titulo-producto mb-1">
+                  Pala Pádel Carbon X Pro
+                </h5>
+                <p class="texto-producto mb-3">
+                  Núcleo EVA soft y marco 100% carbono para un golpeo potente, preciso y con vibración reducida.
+                </p>
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="bloque-precio">
+                    <span class="precio-principal">$2,199 MXN</span>
+                    <span class="precio-anterior">$2,899</span>
+                  </div>
+                  <span class="chip-etiqueta chip-padel">
+                    🎾 Pádel
+                  </span>
+                </div>
+
+                <button class="btn boton-carrito w-100 boton-agregar-carrito">
+                  🛒 Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3: Tenis -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="tarjeta-producto h-100 position-relative">
+              <div class="encabezado-tarjeta"></div>
+
+              <span class="insignia-esquina insignia-topventas">
+                Top ventas
+              </span>
+
+              <div class="contenedor-imagen-producto">
+                <img src="./images/raqueta_de_tenis.jpeg" alt="Raqueta de tenis" class="img-fluid" />
+              </div>
+
+              <div class="card-body cuerpo-tarjeta">
+                <h5 class="titulo-producto mb-1">
+                  Raqueta Tenis Grand Slam 98
+                </h5>
+                <p class="texto-producto mb-3">
+                  Perfil equilibrado, cabeza de 98" y patrón 16x19 diseñados para un juego agresivo y elegante.
+                </p>
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="bloque-precio">
+                    <span class="precio-principal">$3,499 MXN</span>
+                  </div>
+                  <span class="chip-etiqueta chip-tenis">
+                    🎾 Tenis
+                  </span>
+                </div>
+
+                <button class="btn boton-carrito w-100 boton-agregar-carrito">
+                  🛒 Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 4: Regata -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="tarjeta-producto h-100 position-relative">
+              <div class="encabezado-tarjeta"></div>
+
+              <span class="insignia-esquina insignia-regata">
+                Edición regata
+              </span>
+
+              <div class="contenedor-imagen-producto">
+                <img src="./images/chaleco_regata.webp" alt="Chaleco de regata" class="img-fluid" />
+              </div>
+
+              <div class="card-body cuerpo-tarjeta">
+                <h5 class="titulo-producto mb-1">
+                  Chaleco Regata Baltic 150N
+                </h5>
+                <p class="texto-producto mb-3">
+                  Chaleco autoinflable de 150N, ultraligero y certificado para acompañarte en regatas de alto nivel.
+                </p>
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="bloque-precio">
+                    <span class="precio-principal">$2,749 MXN</span>
+                  </div>
+                  <span class="chip-etiqueta chip-regata">
+                    ⛵ Regata
+                  </span>
+                </div>
+
+                <button class="btn boton-carrito w-100 boton-agregar-carrito">
+                  🛒 Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Separador visual entre secciones -->
+    <hr class="separador-seccion my-0" />
+
+    <!-- ==========================
+         SECCIÓN: PROMOCIONES
+    =========================== -->
+    <section id="promociones" class="seccion-promociones py-5">
+      <div class="container contenido-promociones">
+        <div class="row align-items-start g-4">
+
+          <!-- Columna izquierda: texto general -->
+          <div class="col-12 col-lg-6">
+            <p class="etiqueta-promociones mb-2">Promociones exclusivas</p>
+
+            <h3 class="titulo-seccion-promos mb-3">
+              Este fin de temporada, tu juego sube de nivel.
+            </h3>
+
+            <p class="texto-seccion-promos mb-3">
+              Descubre beneficios preferenciales en nuestras líneas insignia de polo, pádel, tenis y regata.
+              Colecciones seleccionadas, pensadas para quienes buscan alto rendimiento sin renunciar al diseño y
+              a la experiencia SportZone.
+            </p>
+
+            <ul class="lista-beneficios mb-4">
+              <li>🐎 -20% en botas de polo</li>
+              <li>🎾 -25% en palas de pádel</li>
+              <li>🎾 Pack raqueta + overgrip</li>
+              <li>⛵ Equipo técnico para regata</li>
+            </ul>
+
+            <a href="#" class="enlace-ver-promos">
+              Ver todas las promociones >>
+            </a>
+          </div>
+
+          <!-- Columna derecha: detalles por promo -->
+          <div class="col-12 col-lg-6">
+            <div class="row g-3">
+              <!-- Promo 1: Polo -->
+              <div class="col-12 col-sm-6">
+                <div class="tarjeta-promocion">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="texto-descuento">-20%</span>
+                    <span class="etiqueta-deporte deporte-polo">Polo</span>
+                  </div>
+                  <p class="titulo-promocion mb-1">Botas Polo Elite Leather</p>
+                  <p class="resumen-promocion mb-0">
+                    Modelo icónico de la colección SportZone, perfecto para torneo y entrenamiento.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Promo 2: Pádel -->
+              <div class="col-12 col-sm-6">
+                <div class="tarjeta-promocion">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="texto-descuento">-25%</span>
+                    <span class="etiqueta-deporte deporte-padel">Pádel</span>
+                  </div>
+                  <p class="titulo-promocion mb-1">Pala Pádel Carbon X Pro</p>
+                  <p class="resumen-promocion mb-0">
+                    Ideal para jugadores intermedios y avanzados que buscan un plus de potencia controlada.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Promo 3: Tenis -->
+              <div class="col-12 col-sm-6">
+                <div class="tarjeta-promocion">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="texto-descuento">Bundle</span>
+                    <span class="etiqueta-deporte deporte-tenis">Tenis</span>
+                  </div>
+                  <p class="titulo-promocion mb-1">Raqueta Grand Slam + accesorios</p>
+                  <p class="resumen-promocion mb-0">
+                    Bundle diseñado para tu siguiente temporada: rendimiento, protección y comodidad.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Promo 4: Regata -->
+              <div class="col-12 col-sm-6">
+                <div class="tarjeta-promocion">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="texto-descuento">2×1</span>
+                    <span class="etiqueta-deporte deporte-regata">Regata</span>
+                  </div>
+                  <p class="titulo-promocion mb-1">Accesorios OceanSafe</p>
+                  <p class="resumen-promocion mb-0">
+                    Configuración pensada para navegación deportiva y jornadas completas en cubierta.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast-sportzone" class="toast-sportzone">
+  <span class="icono">🛒</span>
+  Producto agregado al carrito
+</div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Tu JS -->
+  <script src="./js/productos_y_promociones.js"></script>
+
+</body>
+</html>
